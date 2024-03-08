@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc mừng Ngày 8/3</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="https://i.pinimg.com/originals/e4/50/aa/e450aa2bf91b572a2902691d3d1ddb77.jpg" type="image/png" />
+</head>
+<body>
+    
+    <div id="giftDiv" style="position: relative; width: 100vw; height: 100vh; overflow: hidden;text-align: center">
+        
+        <img src="shycat1.gif" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" alt="Gift">
+        <div id="giftText" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: white; font-family: Arial, sans-serif; font-size: 75px; background-color: rgba(185, 46, 46, 0.5); padding: 10px; border-radius: 10px; z-index: 1;">gửi Chi</div>
+    </div>
+    <div id="a">
+        <div class="container" id="content" style="position: relative;" style="width: 0%; height: 0%; overflow: hidden;text-align: center">
+            <h1>Một ngày thật đặc biệt</h1>
+            <p>Chúc những điều tôt đẹp luôn đến với bạn</p>
+            <p>Chúc bạn luôn có một tinh thần lạc quan yêu đời</p>
+            <p>Và tất nhiên là luôn xinh gái học tốt</p>
+            <p>gửi Chi</p>
+            <iframe src="https://giphy.com/embed/RnZoeVSqUTQzK" id="gif" width="100" height="100" style="position: absolute; top: 325px; left: 140px;" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+            <iframe src="https://giphy.com/embed/M5yyzCim2A6li" width="50" height="50" frameBorder="0" class="giphy-embed" allowFullScreen style="position: absolute; top: 100px; left: 550px;"></iframe>
+             <p>🌹  . 🌹</p>
+            <p>🌹  🌹 🌹 🌹🌹</p>
+            <p>🌹🌹🌹🌹🌹</p>
+            <p>🌹🌹🌹</p>
+            <p>🌹</p>
+            <button id="bu1" type="button" class="button" style="position: absolute; top: 360px; left: 560px;" disabled>10</button>
+
+            <iframe src="https://giphy.com/embed/7SX6B79cDYJ4eG3XG4" width="50px" height="50px" frameBorder="0" class="giphy-embed" allowFullScreen style="position: absolute;top: 360px;left: 510px"></iframe>
+        </div>
+    </div>
+    <canvas id="canvas" width="0" height="0" ></canvas>
+    <audio id="audio" src="nhac.mp3" ></audio>
+    <script>
+        // Lấy thẻ div có id là "content"
+        var content = document.getElementById('content');
+        // Thiết lập kích thước của thẻ div lớn dần sau 2 giây
+        setTimeout(function() {
+            content.style.width = '50%';
+        }, 6000);
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

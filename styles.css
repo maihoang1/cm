@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('https://hinhanhdephd.com/wp-content/uploads/2016/02/hinh-anh-dep-ngay-8-3-16.jpg');
+    background-size: cover; /* Tự động điều chỉnh kích thước của hình nền để nó vừa với cửa sổ trình duyệt */
+    background-position: center; /* Đặt hình nền ở giữa trang */
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+.container {
+    width: 0; /* Kích thước ban đầu là 0 */
+    overflow: hidden; /* Ẩn phần nội dung vượt quá kích thước của container */
+    transition: width 1.5s; /* Thêm transition để làm mềm mại quá trình thay đổi kích thước */
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #da36b7;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-image: url('https://th.bing.com/th/id/OIP.vnGOcmIaTzr1IKPmoaEo6AHaE-?rs=1&pid=ImgDetMain'); /* Đường dẫn đến ảnh nền */
+    background-size: cover; /* Đảm bảo ảnh nền được hiển thị đúng tỷ lệ */
+    background-position: center; /* Đặt ảnh nền ở giữa */
+    font-family:'Sacramento', cursive;
+}
+h1 {
+    color: #ff69b4;
+}
+p {
+    color: #e60f7e;
+}
+.heart {
+    color: #ff69b4;
+}
+#gif {
+    display: block;
+    margin: 0 auto;
+    text-align: left;
+}
+.loader-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lds-heart {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    transform: rotate(45deg);
+    transform-origin: 40px 40px;
+}
+
+.lds-heart div {
+    top: 32px;
+    left: 32px;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background: rgb(250, 3, 250);
+    animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.lds-heart div:after,
+.lds-heart div:before {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: rgb(248, 3, 248);
+}
+
+.lds-heart div:before {
+    left: -24px;
+    border-radius: 50% 0 0 50%;
+}
+
+.lds-heart div:after {
+    top: -24px;
+    border-radius: 50% 50% 0 0;
+}
+
+@keyframes lds-heart {
+    0% {
+        transform: scale(0.95);
+    }
+    5% {
+        transform: scale(1.1);
+    }
+    39% {
+        transform: scale(0.85);
+    }
+    45% {
+        transform: scale(1);
+    }
+    60% {
+        transform: scale(0.95);
+    }
+    100% {
+        transform: scale(0.9);
+    }
+}
+.button {
+    margin:0 auto;
+    background-color: #e24778; /* Màu nền của nút */
+    border: none; /* Không có viền */
+    color: white; /* Màu chữ */
+    padding: 15px 32px; /* Kích thước đệm */
+    text-align: center; /* Căn giữa văn bản */
+    text-decoration: none; /* Không có gạch chân dưới văn bản */
+    display: inline-block; /* Hiển thị là một khối hộp inline */
+    font-size: 16px; /* Cỡ chữ */
+    cursor: pointer; /* Hiển thị con trỏ khi di chuột qua nút */
+    border-radius: 12px; /* Bo tròn các góc */
+}
